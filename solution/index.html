@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/netflix-logo.png"
+      type="image/x-icon"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="title">
+          <span><big>N</big>ET</span>
+          <span id="title-span"> <big>F</big>ILX</span>
+        </div>
+
+        <p id="description">
+          Thank you for signing up at Netflix. Tell us more about your self
+        </p>
+      </header>
+      <form action="result.html" id="survey-form">
+        <!-- Personal Info -->
+        <div class="box">
+          <label for="name">Name</label><br /><input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="box">
+          <label for="age">Age</label><br /><input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Age"
+          />
+        </div>
+        <div class="box">
+          <label for="email">Email</label><br /><input
+            type="text"
+            name=""
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <!-- Content Type -->
+
+        <div class="box">
+          <label for="content">Content type</label>
+          <br />
+          <select name="content" id="content">
+            <option value="series">series</option>
+            <option value="films">Films</option>
+            <option value="geografig">Geografig</option>
+            <option value="cartoons">Cartoons</option>
+          </select>
+        </div>
+
+        <!-- Movie Type -->
+
+        <div class="box">
+          <label for="">Movie type</label> <br />
+          <input type="checkbox" name="movie-type" id="comedy" />
+          <label for="comedy">Comedy</label><br />
+
+          <input type="checkbox" name="movie-type" id="action" />
+          <label for="action">Action</label><br />
+
+          <input type="checkbox" name="movie-type" id="romance" />
+          <label for="romance">Romance</label><br />
+        </div>
+
+        <!-- Gender -->
+
+        <div class="box">
+          <label for="">Gender</label> <br />
+          <input type="radio" name="gender" id="male" value="Male" />
+          <label for="male">Male</label> <br />
+          <input type="radio" name="gender" id="female" value="Female" />
+          <label for="female">Female</label> <br />
+          <input type="radio" name="gender" id="other" value="Other" />
+          <label for="other">Other</label> <br />
+        </div>
+
+        <!-- Feed back -->
+
+        <div class="box">
+          <label for="feed-back">Feed back</label> <br />
+          <textarea
+            name="feed-back"
+            id="feed-back"
+            cols="30"
+            rows="10"
+            placeholder="Any comment"
+          ></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div id="submit">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
